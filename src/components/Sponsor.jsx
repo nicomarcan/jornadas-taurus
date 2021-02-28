@@ -4,8 +4,20 @@ import { AppBar, Typography, Toolbar, Card, CardContent, CardActions, Button } f
 import { makeStyles } from '@material-ui/core/styles';
 
 import Zoetis from "../logos/zoetis.png";
-import Over from "../logos/over.png";
+import Over from "../logos/over.jpg";
 import Vetanco from "../logos/vetanco.jpg";
+import Ciale from "../logos/ciale.jpg";
+import Proagro from "../logos/proagro.jpg";
+import Calier from "../logos/calier.jpg";
+import Zoovet from "../logos/zoovet.jpg";
+
+import OverFoto from "../fotosSponsor/over.jpg";
+import VetancoFoto from "../fotosSponsor/vetanco.jpg";
+import CialeFoto from "../fotosSponsor/ciale.jpeg";
+import ProagroFoto from "../fotosSponsor/proagro.jpg";
+import CalierFoto from "../fotosSponsor/calier.jpg";
+import ZoovetFoto from "../fotosSponsor/zoovet.jpg";
+
 
 import Logo from "../logo.png";
 
@@ -27,20 +39,22 @@ const sponsorsData = {
     webUrl: 'https://www.pfizer.com.ar/'
   },
   'over': {
-    info: 'En Pfizer Trabajamos para desarrollar innovaciones que cambien la vida de los pacientes. La salud es un valor esencial para todos nosotros, por eso aplicamos la ciencia y nuestros recursos globales para brindar terapias que ayudan a extender y mejorar sustancialmente la vida de las personas en todas las etapas de la vida. Contamos con opciones terapéuticas de vanguardia para la prevención y el tratamiento de enfermedades a través de una amplia gama de áreas terapéuticas. Además, contamos con una línea de investigación líder en la industria para el desarrollo de nuevos productos con un potencial prometedor para desafiar algunas de las enfermedades más temidas de nuestro tiempo.',
-    mail: 'pfizer@gmail.com',
-    videoUrl: 'https://www.youtube.com/embed/ZxXKNR12MuQ',
+    info: 'OVER es una empresa argentina especializada en la elaboración, comercialización y distribución de productos de alta calidad para uso en medicina veterinaria.\nOfrece al mercado uno de los vademécums más completos, con más de 200 productos, cubriendo aproximadamente el 90% de las necesidades del profesional veterinario.\nSus instalaciones están equipadas con tecnología de última generación para la producción de medicamentos bajo normas internacionales de calidad BPFPV/GMP, el tratamiento de efluentes, la preservación del medio ambiente y la protección del personal.\nOVER, Ciencia para la salud.',
+    mail: 'marketing@over.com.ar',
+    videoUrl: 'https://www.youtube.com/embed/hZd9fDOKYoM',
     zoomUrl: 'https://www.google.com',
-    webUrl: 'https://www.pfizer.com.ar/',
+    webUrl: 'https://www.over.com.ar',
+    photo: OverFoto,
     logo: Over
   },
   'calier': {
-    info: 'En Pfizer Trabajamos para desarrollar innovaciones que cambien la vida de los pacientes. La salud es un valor esencial para todos nosotros, por eso aplicamos la ciencia y nuestros recursos globales para brindar terapias que ayudan a extender y mejorar sustancialmente la vida de las personas en todas las etapas de la vida. Contamos con opciones terapéuticas de vanguardia para la prevención y el tratamiento de enfermedades a través de una amplia gama de áreas terapéuticas. Además, contamos con una línea de investigación líder en la industria para el desarrollo de nuevos productos con un potencial prometedor para desafiar algunas de las enfermedades más temidas de nuestro tiempo.',
-    mail: 'pfizer@gmail.com',
-    videoUrl: 'https://www.youtube.com/embed/ZxXKNR12MuQ',
-    zoomUrl: 'https://www.google.com',
-    webUrl: 'https://www.pfizer.com.ar/',
-    logo: Over
+    info: 'Calier es la compañía del Grupo Indukern dedicada a la investigación, desarrollo, fabricación y comercialización de productos farmacológicos y biológicos para uso veterinario en animales de producción.\nPonemos a disposición de veterinarios y distribuidores de todo el mundo una amplia oferta terapéutica que incluye acidificantes, antibióticos, antiinflamatorios, antimamíticos, antiparasitarios, biológicos, cardíacos, dermatológicos, desinfectantes, hormonales, premezclas medicamentosas, sedantes y analgésicos, complementos nutricionales y reguladores del sistema digestivo y respiratorio.',
+    mail: 'plopez@calier.com.ar',
+    videoUrl: 'https://www.youtube.com/embed/68NfFFnzmv8',
+    zoomUrl: 'https://us04web.zoom.us/j/9150652935?pwd=c09ydmt0YS9uM0tlQ0M5QnQ5TnVtZz09',
+    webUrl: 'https://www.calier.com.ar',
+    photo: CalierFoto,
+    logo: Calier
   },
   'vetanco': {
     info: 'Vetanco es un laboratorio veterinario internacional que desde hace 30 años desarrolla, elabora y comercializa productos innovadores para la salud y la producción animal.\nPresente en más de 40 países ofrece productos internacionalmente probados, controlados y seguros.\nComo referente internacional en aditivos y especialidades para la agroindustria su portafolio de productos es amplio y diversificado.\nVetanco cuenta con proyectos de investigación de la más avanzada tecnología, tanto en sus laboratorios de I+D como en colaboración con centros de excelencia en todo el mundo. ',
@@ -48,7 +62,35 @@ const sponsorsData = {
     videoUrl: 'https://www.youtube.com/embed/rx2Nfr-eA_k',
     zoomUrl: 'https://www.google.com',
     webUrl: 'https://www.vetanco.com/',
+    photo: VetancoFoto,
     logo: Vetanco
+  },
+  'ciale': {
+    info: 'CIALE Alta existe para más que producir y comercializar semen de toros de alto calibre. CIALE Alta trabaja con sus clientes para crear valor para ellos esforzándose por comprender y estar a la altura de sus necesidades y objetivos individuales. La diferencia la marcan los programas innovadores y los servicios reproductivos. Proveer programas personalizados que sean específicos para las necesidades individuales de cada cliente, esa es la promesa detrás de la marca de CIALE Alta, promesa que busca mejorar de manera tangible la rentabilidad individual de cada rodeo.',
+    mail: 'info@ciale.com',
+    videoUrl: 'https://www.youtube.com/embed/La_NQRlzA-Q',
+    zoomUrl: 'https://www.google.com',
+    webUrl: 'https://www.ciale.com',
+    photo: CialeFoto,
+    logo: Ciale
+  },
+  'proagro': {
+    info: 'Proagro es un laboratorio de medicamentos veterinarios para grandes y pequeños animales avalado por 50 años de trayectoria en el mercado. Con una expansión cada vez mayor a nivel mundial, se asienta como una de las empresas con mayor solidez en la ciudad de Rosario.\nDesde 2008, cuenta con la certificación GMP, asegurando la incorporación de productos confiables, trazables y seguros al mercado nacional e internacional.\nLa empresa tiene un fuerte compromiso social: colabora habitualmente con distintas fundaciones, instituciones, escuelas, hospitales y diversas organizaciones afines.',
+    mail: 'info@proagrolab.com.ar',
+    videoUrl: 'https://www.youtube.com/embed/JVpscsITY3s',
+    zoomUrl: 'https://www.google.com',
+    webUrl: 'https://www.proagrolab.com.ar',
+    photo: ProagroFoto,
+    logo: Proagro
+  },
+  'zoovet': {
+    info: 'En Zoovet tenemos como misión, brindar el mejor servicio y ofrecer productos de calidad, agregando valor a través del asesoramiento comercial de nuestros representantes, asumiendo el compromiso de jerarquizar la labor del Médico Veterinario como profesional de la sanidad. Creamos productos mejoradores de la producción y bienestar animal. NUESTRA RECETA, LA MEJOR RECETA.',
+    mail: 'marketing@zoovet.com.ar',
+    videoUrl: 'https://www.youtube.com/embed/ATQBjDgL-OQ',
+    zoomUrl: 'https://zoom.us/j/97498298362?pwd=NDQxZjYvZHlLMVpYTHNzaHZrc3NQdz09',
+    webUrl: 'https://www.zoovet.com.arr',
+    photo: ZoovetFoto,
+    logo: Zoovet
   },
 }
 
@@ -113,8 +155,8 @@ const Sponsor = () => {
             10as Jornadas Taurus de Reproducción Bovina
           </Typography>
         </Toolbar>
-        <div style={{ textAlign: 'center'}}>
-          <img style={{ height: '50px', display: 'inline-block'}} src={sponsor.logo}></img>
+        <div style={{ textAlign: 'center' }}>
+          <img style={{ height: '50px', display: 'inline-block' }} src={sponsor.logo}></img>
         </div>
         <div >
           <img className={classes.logoImg} onClick={goToHome} src={Logo}></img>
@@ -130,6 +172,10 @@ const Sponsor = () => {
       <div style={{ display: 'table', margin: '0 auto', paddingBottom: '45px' }}>
         <Button className={classes.sponsorBtn} style={{ position: 'relative', right: '10px' }} target="_blank" href={sponsor.webUrl} size="small" variant="contained" >Web institucional</Button>
         <Button className={classes.sponsorBtn} style={{ position: 'relative', left: '10px' }} target="_blank" href={sponsor.zoomUrl} size="small" >Link al zoom</Button>
+      </div>
+
+      <div style={{ textAlign: 'center' , marginBottom: '45px'}}>
+        <img style={{ width: '1080px', display: 'inline-block' }} src={sponsor.photo}></img>
       </div>
 
       <Card className={classes.root} variant="outlined" style={{ paddingLeft: '15px', paddingTop: '0px' }} >

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import { Link } from 'react-router-dom';
 import { AppBar, Typography, Toolbar, Button, Card, CardContent } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
@@ -110,8 +110,16 @@ const goToSponsor = (sponsor) => {
   window.location.href = './#/sponsors/' + sponsor;
 }
 
+const goToRef = (ref) =>{
+  ref.current.scrollIntoView(); 
+};
+
 const Home = () => {
   const classes = useStyles();
+
+  const schedule = useRef(null)
+  const speakers = useRef(null)
+  const sponsorsRef = useRef(null)
 
   return (
     <div style={{ flexGrow: 1 }}>
@@ -120,9 +128,9 @@ const Home = () => {
           <Typography variant="h6" color="inherit" style={{ flexGrow: 1 }}>
             <img style={{ width: '170px', marginTop: '15px' }} src={Logo}></img>
           </Typography>
-          {/*<Button color="inherit">Patrocinantes</Button>
-        <Button color="inherit" >Programa</Button>
-        <Button color="inherit">Disertantes</Button>*/}
+          <Button color="inherit" onClick={() => goToRef(sponsorsRef)}>Patrocinantes</Button>
+          <Button color="inherit" onClick={() => goToRef(schedule)}>Programa</Button>
+          <Button color="inherit" onClick={() => goToRef(speakers)}>Disertantes</Button>
           <Button color="inherit" onClick={taurusPage}>Web Taurus</Button>
         </Toolbar>
       </AppBar>
@@ -142,7 +150,7 @@ const Home = () => {
       </Typography>
 
 
-      <div style={{ display: 'inline-flex', marginTop: '20px' }}>
+      <div style={{ display: 'inline-flex', marginTop: '20px' }} ref={sponsorsRef}>
         <iframe style={{ marginLeft: '35px' }} align="middle" width="800" height="425" src="https://www.youtube.com/embed/WMq9kWEm2qM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         <Card className={classes.sponsors} variant="outlined" >
           <CardContent className={classes.content}>
@@ -211,8 +219,8 @@ const Home = () => {
         </CardContent>
       </Card>
 
-      <img className={classes.schedule} src={Programa}></img>
-      <img className={classes.speakers} src={Disertantes}></img>
+      <img className={classes.schedule} ref={schedule} src={Programa}></img>
+      <img className={classes.speakers} ref={speakers} src={Disertantes}></img>
 
 
       <Typography className={classes.footer} color="textSecondary" gutterBottom>

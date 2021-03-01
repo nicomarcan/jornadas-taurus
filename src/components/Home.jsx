@@ -75,7 +75,7 @@ const useStyles = makeStyles({
   },
   sponsorSec: {
     background: 'white',
-    marginLeft: '40px',
+    marginLeft: '25px',
     width: '130px',
     height: '125px',
     borderRadius: '120px',
@@ -176,44 +176,28 @@ const Home = () => {
           </Typography>
           <div style={{ display: 'inline-flex' }}>
             <div className={classes.sponsorSec} onClick={() => goToSponsor('calier')}>
-              <img className={classes.sponsorSecImg} style={{ position: 'relative', left: '6px' }} src={Calier}></img>
-              <p className={classes.sponsorsText}>Ingrese a la reunión</p>
-              <p className={classes.sponsorsText}>Regístrese para el sorteo</p>
+              <img className={classes.sponsorSecImg} style={{ position: 'relative', left: '7px', top: '27px' }} src={Calier}></img>
             </div>
             <div className={classes.sponsorSec} onClick={() => goToSponsor('vetanco')}>
-              <img className={classes.sponsorSecImg} style={{ position: 'relative', width: '140px', right: '4px', paddingTop: '10px', paddingBottom: '3px' }} src={Vetanco}></img>
-              <p className={classes.sponsorsText}>Ingrese a la reunión</p>
-              <p className={classes.sponsorsText}>Regístrese para el sorteo</p>
+              <img className={classes.sponsorSecImg} style={{ position: 'relative', width: '140px', right: '4px', top:'22px', paddingTop: '10px', paddingBottom: '3px' }} src={Vetanco}></img>
             </div>
             <div className={classes.sponsorSec} onClick={() => goToSponsor('allVet')}>
-              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '6px' }} src={AllVet}></img>
-              <p className={classes.sponsorsText}>Ingrese a la reunión</p>
-              <p className={classes.sponsorsText}>Regístrese para el sorteo</p>
+              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '41px', left:'4px' }} src={AllVet}></img>
             </div>
             <div className={classes.sponsorSec} onClick={() => goToSponsor('ciale')}>
-              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '6px' }} src={Ciale}></img>
-              <p className={classes.sponsorsText}>Ingrese a la reunión</p>
-              <p className={classes.sponsorsText}>Regístrese para el sorteo</p>
+              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '39px' }} src={Ciale}></img>
             </div>
             <div className={classes.sponsorSec} onClick={() => goToSponsor('cdv')}>
-              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '6px' }} src={CDV}></img>
-              <p className={classes.sponsorsText}>Ingrese a la reunión</p>
-              <p className={classes.sponsorsText}>Regístrese para el sorteo</p>
+              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '39px' }} src={CDV}></img>
             </div>
             <div className={classes.sponsorSec} onClick={() => goToSponsor('phibro')}>
-              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '6px' }} src={Phibro}></img>
-              <p className={classes.sponsorsText}>Ingrese a la reunión</p>
-              <p className={classes.sponsorsText}>Regístrese para el sorteo</p>
+              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '41px' }} src={Phibro}></img>
             </div>
             <div className={classes.sponsorSec} onClick={() => goToSponsor('arsa')}>
-              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '6px' }} src={Arsa}></img>
-              <p className={classes.sponsorsText}>Ingrese a la reunión</p>
-              <p className={classes.sponsorsText}>Regístrese para el sorteo</p>
+              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '35px', width:'150px' }} src={Arsa}></img>
             </div>
             <div className={classes.sponsorSec} onClick={() => goToSponsor('zoetis')}>
-              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '6px' }} src={Zoetis}></img>
-              <p className={classes.sponsorsText}>Ingrese a la reunión</p>
-              <p className={classes.sponsorsText}>Regístrese para el sorteo</p>
+              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '2px', left:'3px' }} src={Zoetis}></img>
             </div>
           </div>
         </CardContent>

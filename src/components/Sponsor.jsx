@@ -10,6 +10,7 @@ import Ciale from "../logos/ciale.jpg";
 import Proagro from "../logos/proagro.jpg";
 import Calier from "../logos/calier.jpg";
 import Zoovet from "../logos/zoovet.jpg";
+import Phibro from "../logos/phibro.jpg";
 
 import OverFoto from "../fotosSponsor/over.jpg";
 import VetancoFoto from "../fotosSponsor/vetanco.jpg";
@@ -17,7 +18,7 @@ import CialeFoto from "../fotosSponsor/ciale.jpeg";
 import ProagroFoto from "../fotosSponsor/proagro.jpg";
 import CalierFoto from "../fotosSponsor/calier.jpg";
 import ZoovetFoto from "../fotosSponsor/zoovet.jpg";
-
+import PhibroFoto from "../fotosSponsor/phibro.png";
 
 import Logo from "../logo.png";
 
@@ -52,7 +53,7 @@ const sponsorsData = {
     mail: 'plopez@calier.com.ar',
     videoUrl: 'https://www.youtube.com/embed/68NfFFnzmv8',
     zoomUrl: 'https://us04web.zoom.us/j/9150652935?pwd=c09ydmt0YS9uM0tlQ0M5QnQ5TnVtZz09',
-    webUrl: 'https://www.calier.com.ar',
+    webUrl: 'http://www.calier.com.ar',
     photo: CalierFoto,
     logo: Calier
   },
@@ -92,6 +93,15 @@ const sponsorsData = {
     photo: ZoovetFoto,
     logo: Zoovet
   },
+  'phibro': {
+    info: 'En Zoovet tenemos como misión, brindar el mejor servicio y ofrecer productos de calidad, agregando valor a través del asesoramiento comercial de nuestros representantes, asumiendo el compromiso de jerarquizar la labor del Médico Veterinario como profesional de la sanidad. Creamos productos mejoradores de la producción y bienestar animal. NUESTRA RECETA, LA MEJOR RECETA.',
+    mail: 'marketing@zoovet.com.ar',
+    videoUrl: '    https://www.youtube.com/embed/fKRAH2iu81E',
+    zoomUrl: 'https://www.google.com',
+    webUrl: 'https://www.zoovet.com.arr',
+    photo: PhibroFoto,
+    logo: Phibro
+  }
 }
 
 const useStyles = makeStyles({

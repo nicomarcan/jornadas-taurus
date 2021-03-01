@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { AppBar, Typography, Toolbar, Button, Card, CardContent } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
@@ -33,9 +33,13 @@ const useStyles = makeStyles({
     paddingTop: '6px',
   },
   title: {
+    fontFamily: 'Oswald',
+    color: 'black',
+    fontSize: '18px',
+    paddingLeft: '45px',
+    paddingRight: '45px',
     textAlign: 'center',
-    fontSize: 16,
-    color: 'black'
+    lineHeight: '25px'
   },
   content: {
     paddingTop: '12px !important',
@@ -62,7 +66,7 @@ const useStyles = makeStyles({
     borderRadius: 0,
   },
   sponsor: {
-    width: '170px', marginTop: '15px', marginLeft: '100px'
+    width: '170px', marginTop: '15px'
   },
   sponsorsSec: {
     background: '#add8e6 ',
@@ -99,6 +103,36 @@ const useStyles = makeStyles({
     marginBottom: 0,
     fontSize: '9px',
     fontWeight: 'bold'
+  },
+  sponsorsSecTitle: {
+    width: '125px',
+    fontFamily: 'Oswald',
+    fontSize: '20px',
+    fontWeight: 'bold',
+    borderBottom: 'solid rgba(0, 0, 0, .3) 1px',
+    marginBottom: '15px'
+  },
+  sponsorsTitle: {
+    textAlign: 'center',
+    fontSize: '38px',
+    fontFamily: 'Oswald',
+    fontWeight: 'bold',
+    color: '#585858',
+    paddingBottom: '7px',
+    width: '237px',
+    lineHeight: '36px',
+    borderBottom: 'solid rgb(88,88,88,0.9) 1px',
+    marginLeft: '62px',
+    marginBottom: 0
+  },
+  sponsorsDivPrincipal: {
+    borderBottom: 'solid rgb(88,88,88,0.9) 1px',
+    textAlign: 'center',
+    width: '237px',
+    marginLeft: '63px',
+    '&:hover': {
+      cursor: 'pointer'
+    }
   }
 });
 
@@ -110,8 +144,8 @@ const goToSponsor = (sponsor) => {
   window.location.href = './#/sponsors/' + sponsor;
 }
 
-const goToRef = (ref) =>{
-  ref.current.scrollIntoView(); 
+const goToRef = (ref) => {
+  ref.current.scrollIntoView();
 };
 
 const Home = () => {
@@ -128,10 +162,10 @@ const Home = () => {
           <Typography variant="h6" color="inherit" style={{ flexGrow: 1 }}>
             <img style={{ width: '170px', marginTop: '15px' }} src={Logo}></img>
           </Typography>
-          <Button color="inherit" onClick={() => goToRef(sponsorsRef)}>Patrocinantes</Button>
-          <Button color="inherit" onClick={() => goToRef(schedule)}>Programa</Button>
-          <Button color="inherit" onClick={() => goToRef(speakers)}>Disertantes</Button>
-          <Button color="inherit" onClick={taurusPage}>Web Taurus</Button>
+          <Button color="inherit" onClick={() => goToRef(sponsorsRef)}><strong>Patrocinantes</strong></Button>
+          <Button color="inherit" onClick={() => goToRef(schedule)}><strong>Programa</strong></Button>
+          <Button color="inherit" onClick={() => goToRef(speakers)}><strong>Disertantes</strong></Button>
+          <Button color="inherit" onClick={taurusPage}><strong>Web Taurus</strong></Button>
         </Toolbar>
       </AppBar>
       <div >
@@ -151,18 +185,24 @@ const Home = () => {
 
 
       <div style={{ display: 'inline-flex', marginTop: '20px' }} ref={sponsorsRef}>
-        <iframe style={{ marginLeft: '35px' }} align="middle" width="800" height="425" src="https://www.youtube.com/embed/WMq9kWEm2qM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-        <Card className={classes.sponsors} variant="outlined" >
+        <iframe style={{ marginLeft: '35px' , marginTop: '40px'}} align="middle" width="800" height="425" src="https://www.youtube.com/embed/WMq9kWEm2qM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <Card className={classes.sponsors} style={{border:'none', boxShadow:'none'}} >
           <CardContent className={classes.content}>
-            <Typography gutterBottom>
+            <Typography gutterBottom className={classes.sponsorsTitle}>
               PATROCINANTES PRINCIPALES
           </Typography>
-            <img className={classes.sponsor} src={VonFranken}></img>
-            <img className={classes.sponsor} style={{ width: '120px', marginLeft: '125px' }} src={Over}></img>
-            <div onClick={() => goToSponsor('zoovet')}>
-              <img className={classes.sponsor} src={Zoovet}></img>
+            <div className={classes.sponsorsDivPrincipal} onClick={() => goToSponsor('vonfranken')}>
+              <img className={classes.sponsor} src={VonFranken}></img>
             </div>
-            <img style={{ width: '120px', marginLeft: '120px' }} className={classes.sponsor} src={ProAgro}></img>
+            <div className={classes.sponsorsDivPrincipal} onClick={() => goToSponsor('over')}>
+              <img className={classes.sponsor} style={{ width: '120px', marginTop: '20px', marginBottom: '15px' }} src={Over}></img>
+            </div>
+            <div className={classes.sponsorsDivPrincipal} onClick={() => goToSponsor('zoovet')}>
+              <img className={classes.sponsor} src={Zoovet} style={{marginTop: '0px'}}></img>
+            </div>
+            <div className={classes.sponsorsDivPrincipal} onClick={() => goToSponsor('zoetis')}>
+              <img style={{ width: '120px', marginTop:'5px'  }} className={classes.sponsor} src={ProAgro}></img>
+            </div>
 
           </CardContent>
         </Card>
@@ -171,18 +211,18 @@ const Home = () => {
 
       <Card className={classes.sponsorsSec} variant="outlined" >
         <CardContent className={classes.content}>
-          <Typography gutterBottom>
+          <Typography gutterBottom className={classes.sponsorsSecTitle}>
             PATROCINANTES
           </Typography>
           <div style={{ display: 'inline-flex' }}>
             <div className={classes.sponsorSec} onClick={() => goToSponsor('calier')}>
-              <img className={classes.sponsorSecImg} style={{ position: 'relative', left: '7px', top: '27px' }} src={Calier}></img>
+              <img className={classes.sponsorSecImg} style={{ position: 'relative', left: '8px', top: '21px', width: '130px' }} src={Calier}></img>
             </div>
             <div className={classes.sponsorSec} onClick={() => goToSponsor('vetanco')}>
-              <img className={classes.sponsorSecImg} style={{ position: 'relative', width: '140px', right: '4px', top:'22px', paddingTop: '10px', paddingBottom: '3px' }} src={Vetanco}></img>
+              <img className={classes.sponsorSecImg} style={{ position: 'relative', width: '140px', right: '4px', top: '22px', paddingTop: '10px', paddingBottom: '3px' }} src={Vetanco}></img>
             </div>
             <div className={classes.sponsorSec} onClick={() => goToSponsor('allVet')}>
-              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '41px', left:'4px' }} src={AllVet}></img>
+              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '41px', left: '4px' }} src={AllVet}></img>
             </div>
             <div className={classes.sponsorSec} onClick={() => goToSponsor('ciale')}>
               <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '39px' }} src={Ciale}></img>
@@ -194,10 +234,10 @@ const Home = () => {
               <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '41px' }} src={Phibro}></img>
             </div>
             <div className={classes.sponsorSec} onClick={() => goToSponsor('arsa')}>
-              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '35px', width:'150px' }} src={Arsa}></img>
+              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '35px', width: '150px' }} src={Arsa}></img>
             </div>
             <div className={classes.sponsorSec} onClick={() => goToSponsor('zoetis')}>
-              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '2px', left:'3px' }} src={Zoetis}></img>
+              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '2px', left: '3px' }} src={Zoetis}></img>
             </div>
           </div>
         </CardContent>

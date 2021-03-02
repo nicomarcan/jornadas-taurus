@@ -11,6 +11,7 @@ import Proagro from "../logos/proagro.jpg";
 import Calier from "../logos/calier.jpg";
 import Zoovet from "../logos/zoovet.jpg";
 import Phibro from "../logos/phibro.jpg";
+import Allvet from "../logos/allvet.jpg";
 
 import OverFoto from "../fotosSponsor/over.jpg";
 import VetancoFoto from "../fotosSponsor/vetanco.jpg";
@@ -19,6 +20,7 @@ import ProagroFoto from "../fotosSponsor/proagro.jpg";
 import CalierFoto from "../fotosSponsor/calier.jpg";
 import ZoovetFoto from "../fotosSponsor/zoovet.jpg";
 import PhibroFoto from "../fotosSponsor/phibro.png";
+import AllvetFoto from "../fotosSponsor/allvet.jpg";
 
 import Logo from "../logo.png";
 
@@ -101,7 +103,27 @@ const sponsorsData = {
     webUrl: 'https://www.zoovet.com.arr',
     photo: PhibroFoto,
     logo: Phibro
-  }
+  },
+  'vonfranken': {
+    info: 'Somos una empresa de familia que crece y se profesionaliza con vocación de acompañar al veterinario en su tarea diaria y comprometidos con la sanidad animal.\nFatro, laboratorio líder en Europa, forma parte de nuestra sociedad.\nDesde hace más de 60 años, iniciamos un camino de crecimiento sostenido tanto en áreas productivas, líneas terapéuticas y en los países donde estamos presentes.\nHoy somos más de 100 personas trabajando juntos, contamos con más de 100 productos y estamos presentes en 16 países, en muchos, con posiciones de liderazgo.\nFuimos de los primeros laboratorios en Argentina en obtener la certificación GMP lo que garantiza la máxima seguridad y confiabilidad de nuestros productos.\nDesde siempre, promovemos los valores de compromiso, respeto y mejora continua, reflejados en la calidad de nuestros productos y en el profesionalismo comercial.',
+    mail: 'consultas@fatrovonfranken.com.ar',
+    videoUrl: 'https://www.youtube.com/embed/oEPVQy1Tv5I',
+    zoomUrl: 'https://www.google.com',
+    webUrl: 'https://www.fatrovonfranken.com/',
+    photo: ProagroFoto,
+    logo: Proagro
+  },
+  'allvet': {
+    info: 'Allvet Tecnología Veterinaria, fundada en 2007, es uno de los principales referentes en el mercado argentino de equipos de ultrasonido en veterinaria. Tiene como objetivo seleccionar y adquirir productos por su tecnología y prestación aplicada en grandes animales, tanto en el área reproductiva como en producción animal. Distribuidor exclusivo en Argentina de BCF Technology, introduciendo la tecnología de Easi-scan en Argentina. Nuestra posición en el mercado se basa en un alto nivel de conocimiento técnico focalizando en las áreas de: Asesoramiento Técnico, Servicio de ventas, Servicio de Post Venta, Aplicación de productos y Servicio Técnico.',
+    mail: 'marcelo.perilli@allvet-tv.com.ar',
+    videoUrl: 'https://www.youtube.com/embed/3osKqFZr5X4',
+    zoomUrl: 'https://www.google.com',
+    webUrl: 'http://www.allvet-tv.com.ar/',
+    photo: AllvetFoto,
+    logo: Allvet
+  },
+
+
 }
 
 const useStyles = makeStyles({

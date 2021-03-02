@@ -200,7 +200,7 @@ const Home = () => {
             <div className={classes.sponsorsDivPrincipal} onClick={() => goToSponsor('zoovet')}>
               <img className={classes.sponsor} src={Zoovet} style={{marginTop: '0px'}}></img>
             </div>
-            <div className={classes.sponsorsDivPrincipal} onClick={() => goToSponsor('zoetis')}>
+            <div className={classes.sponsorsDivPrincipal} onClick={() => goToSponsor('proagro')}>
               <img style={{ width: '120px', marginTop:'5px'  }} className={classes.sponsor} src={ProAgro}></img>
             </div>
 
@@ -221,8 +221,8 @@ const Home = () => {
             <div className={classes.sponsorSec} onClick={() => goToSponsor('vetanco')}>
               <img className={classes.sponsorSecImg} style={{ position: 'relative', width: '140px', right: '4px', top: '22px', paddingTop: '10px', paddingBottom: '3px' }} src={Vetanco}></img>
             </div>
-            <div className={classes.sponsorSec} onClick={() => goToSponsor('allVet')}>
-              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '41px', left: '4px' }} src={AllVet}></img>
+            <div className={classes.sponsorSec} onClick={() => goToSponsor('allvet')}>
+              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '41px', left: '4px', width:'115px' }} src={AllVet}></img>
             </div>
             <div className={classes.sponsorSec} onClick={() => goToSponsor('ciale')}>
               <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '39px' }} src={Ciale}></img>

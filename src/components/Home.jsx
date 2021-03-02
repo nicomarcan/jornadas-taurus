@@ -210,7 +210,7 @@ const Home = () => {
 
 
       <Card className={classes.sponsorsSec} variant="outlined" >
-        <CardContent className={classes.content}>
+        <CardContent className={classes.content} style={{textAlign:'center'}}>
           <Typography gutterBottom className={classes.sponsorsSecTitle}>
             PATROCINANTES
           </Typography>

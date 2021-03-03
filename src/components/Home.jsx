@@ -184,7 +184,7 @@ const Home = () => {
       </Typography>
 
 
-      <div style={{ display: 'inline-flex', marginTop: '20px' }} ref={sponsorsRef}>
+      <div style={{  marginTop: '20px', display: 'flex', alignItems: 'center',  justifyContent: 'center' }} ref={sponsorsRef}>
         <iframe style={{ marginLeft: '35px' , marginTop: '40px'}} align="middle" width="800" height="425" src="https://www.youtube.com/embed/WMq9kWEm2qM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         <Card className={classes.sponsors} style={{border:'none', boxShadow:'none'}} >
           <CardContent className={classes.content}>

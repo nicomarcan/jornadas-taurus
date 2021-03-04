@@ -91,16 +91,16 @@ const sponsorsData = {
     mail: 'marketing@zoovet.com.ar',
     videoUrl: 'https://www.youtube.com/embed/ATQBjDgL-OQ',
     zoomUrl: 'https://zoom.us/j/97498298362?pwd=NDQxZjYvZHlLMVpYTHNzaHZrc3NQdz09',
-    webUrl: 'https://www.zoovet.com.arr',
+    webUrl: 'https://www.zoovet.com.ar',
     photo: ZoovetFoto,
     logo: Zoovet
   },
   'phibro': {
-    info: 'En Zoovet tenemos como misión, brindar el mejor servicio y ofrecer productos de calidad, agregando valor a través del asesoramiento comercial de nuestros representantes, asumiendo el compromiso de jerarquizar la labor del Médico Veterinario como profesional de la sanidad. Creamos productos mejoradores de la producción y bienestar animal. NUESTRA RECETA, LA MEJOR RECETA.',
-    mail: 'marketing@zoovet.com.ar',
-    videoUrl: '    https://www.youtube.com/embed/fKRAH2iu81E',
-    zoomUrl: 'https://www.google.com',
-    webUrl: 'https://www.zoovet.com.arr',
+    info: 'Fundada en 1970, Minitube International es líder mundial en tecnologías de reproducción asistida.\nComo líder de la industria, Minitube es consciente de la importancia de proporcionar productos de calidad y seguridad. Por esta razón, todos los productos patentados se fabrican en sus propias instalaciones con certificación ISO. Con sede en Tiefenbach, Alemania, Minitube International atiende a clientes de todo el mundo con soporte local a través de filiales y distribuidores altamente cualificados.\nPhibro Salud Animal es el representante exclusivo de Minitube Internacional en Argentina. ',
+    mail: 'ana.donovan@pahc.com',
+    videoUrl: 'https://www.youtube.com/embed/fKRAH2iu81E',
+    zoomUrl: 'https://us02web.zoom.us/j/84124551180',
+    webUrl: 'https://phibrosaludanimal.com/consulta-tecnica',
     photo: PhibroFoto,
     logo: Phibro
   },

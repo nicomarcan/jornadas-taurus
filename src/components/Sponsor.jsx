@@ -46,7 +46,7 @@ const sponsorsData = {
     mail: 'marketing@over.com.ar',
     videoUrl: 'https://www.youtube.com/embed/hZd9fDOKYoM',
     zoomUrl: 'https://www.google.com',
-    webUrl: 'https://www.over.com.ar',
+    webUrl: 'http://www.over.com.ar',
     photo: OverFoto,
     logo: Over
   },

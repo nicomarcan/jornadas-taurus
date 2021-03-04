@@ -12,6 +12,7 @@ import Calier from "../logos/calier.jpg";
 import Zoovet from "../logos/zoovet.jpg";
 import Phibro from "../logos/phibro.jpg";
 import Allvet from "../logos/allvet.jpg";
+import VonFranken from "../logos/vonfranken.png";
 
 import OverFoto from "../fotosSponsor/over.jpg";
 import VetancoFoto from "../fotosSponsor/vetanco.jpg";
@@ -110,14 +111,12 @@ const sponsorsData = {
     videoUrl: 'https://www.youtube.com/embed/oEPVQy1Tv5I',
     zoomUrl: 'https://www.google.com',
     webUrl: 'https://www.fatrovonfranken.com/',
-    photo: ProagroFoto,
-    logo: Proagro
+    logo: VonFranken
   },
   'allvet': {
     info: 'Allvet Tecnología Veterinaria, fundada en 2007, es uno de los principales referentes en el mercado argentino de equipos de ultrasonido en veterinaria. Tiene como objetivo seleccionar y adquirir productos por su tecnología y prestación aplicada en grandes animales, tanto en el área reproductiva como en producción animal. Distribuidor exclusivo en Argentina de BCF Technology, introduciendo la tecnología de Easi-scan en Argentina. Nuestra posición en el mercado se basa en un alto nivel de conocimiento técnico focalizando en las áreas de: Asesoramiento Técnico, Servicio de ventas, Servicio de Post Venta, Aplicación de productos y Servicio Técnico.',
     mail: 'marcelo.perilli@allvet-tv.com.ar',
     videoUrl: 'https://www.youtube.com/embed/3osKqFZr5X4',
-    zoomUrl: 'https://www.google.com',
     webUrl: 'http://www.allvet-tv.com.ar/',
     photo: AllvetFoto,
     logo: Allvet
@@ -203,7 +202,7 @@ const Sponsor = () => {
 
       <div style={{ display: 'table', margin: '0 auto', paddingBottom: '45px' }}>
         <Button className={classes.sponsorBtn} style={{ position: 'relative', right: '10px' }} target="_blank" href={sponsor.webUrl} size="small" variant="contained" >Web institucional</Button>
-        <Button className={classes.sponsorBtn} style={{ position: 'relative', left: '10px' }} target="_blank" href={sponsor.zoomUrl} size="small" >Link al zoom</Button>
+        {sponsor.zoomUrl ? <Button className={classes.sponsorBtn} style={{ position: 'relative', left: '10px' }} target="_blank" href={sponsor.zoomUrl} size="small" >Link al zoom</Button> : null }
       </div>
 
       <div style={{ textAlign: 'center' , marginBottom: '45px'}}>

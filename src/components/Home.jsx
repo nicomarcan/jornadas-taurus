@@ -11,7 +11,7 @@ import Zoovet from "../logosPrincipal/zoovet.png";
 import ProAgro from "../logosPrincipal/proagro.png";
 
 
-import Calier from "../logosPrincipal/calier.png";
+import Calier from "../logosPrincipal/calier.jpg";
 import Vetanco from "../logosPrincipal/vetanco.png";
 import AllVet from "../logosPrincipal/allvet.jpg";
 import Ciale from "../logosPrincipal/ciale.png";
@@ -216,7 +216,7 @@ const Home = () => {
           </Typography>
           <div style={{ display: 'inline-flex' }}>
             <div className={classes.sponsorSec} onClick={() => goToSponsor('calier')}>
-              <img className={classes.sponsorSecImg} style={{ position: 'relative', left: '8px', top: '21px', width: '130px' }} src={Calier}></img>
+              <img className={classes.sponsorSecImg} style={{ position: 'relative', left: '3px', top: '28px', width: '90px' }} src={Calier}></img>
             </div>
             <div className={classes.sponsorSec} onClick={() => goToSponsor('vetanco')}>
               <img className={classes.sponsorSecImg} style={{ position: 'relative', width: '140px', right: '4px', top: '22px', paddingTop: '10px', paddingBottom: '3px' }} src={Vetanco}></img>

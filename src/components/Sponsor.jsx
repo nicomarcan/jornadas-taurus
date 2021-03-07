@@ -28,25 +28,22 @@ import Logo from "../logo.png";
 
 const sponsorsData = {
   'zoetis': {
-    info: 'Zoetis es una compañía global de salud animal dedicada a apoyar a sus clientes y sus negocios en la mejor forma posible. Basados en 60 años de experiencia, entregamos medicamentos y vacunas de calidad, apoyo y educación.Estamos trabajando cada día para comprender y atender mejor los desafíos del mundo real que enfrentan aquellos que crían y cuidan de los animales en formas que ellos consideren verdaderamente relevantes.',
-    mail: 'zoetis@gmail.com',
-    videoUrl: 'https://www.youtube.com/embed/ZxXKNR12MuQ',
-    zoomUrl: 'https://www.google.com',
-    webUrl: 'https://ar.zoetis.com/',
+    info: 'Zoetis es una compañía global de salud animal dedicada a apoyar a sus clientes y sus negocios en la mejor forma posible. Basados en 60 años de experiencia, entregamos medicamentos y vacunas de calidad, apoyo y educación.\nZoetis ofrece un completo portfolio de productos de calidad, para ayudar a los ganaderos y veterinarios a desarrollar sus programas de salud adaptados a su explotación. Una gama completa de productos eficaces, seguros y de confianza, respaldados por la experiencia de una compañía líder en el sector de la salud animal, es la garantía que ofrece Zoetis a sus colaboradores.',
+    mail: 'marketing@zoetis.com',
+    videoUrl: 'https://www.youtube.com/embed/8OF0xpjK7no',
+    webUrl: 'https://ar.zoetis.com/species/bovino.aspx',
     logo: Zoetis,
   },
   'pfizer': {
     info: 'En Pfizer Trabajamos para desarrollar innovaciones que cambien la vida de los pacientes. La salud es un valor esencial para todos nosotros, por eso aplicamos la ciencia y nuestros recursos globales para brindar terapias que ayudan a extender y mejorar sustancialmente la vida de las personas en todas las etapas de la vida. Contamos con opciones terapéuticas de vanguardia para la prevención y el tratamiento de enfermedades a través de una amplia gama de áreas terapéuticas. Además, contamos con una línea de investigación líder en la industria para el desarrollo de nuevos productos con un potencial prometedor para desafiar algunas de las enfermedades más temidas de nuestro tiempo.',
     mail: 'pfizer@gmail.com',
     videoUrl: 'https://www.youtube.com/embed/ZxXKNR12MuQ',
-    zoomUrl: 'https://www.google.com',
     webUrl: 'https://www.pfizer.com.ar/'
   },
   'over': {
     info: 'OVER es una empresa argentina especializada en la elaboración, comercialización y distribución de productos de alta calidad para uso en medicina veterinaria.\nOfrece al mercado uno de los vademécums más completos, con más de 200 productos, cubriendo aproximadamente el 90% de las necesidades del profesional veterinario.\nSus instalaciones están equipadas con tecnología de última generación para la producción de medicamentos bajo normas internacionales de calidad BPFPV/GMP, el tratamiento de efluentes, la preservación del medio ambiente y la protección del personal.\nOVER, Ciencia para la salud.',
     mail: 'marketing@over.com.ar',
     videoUrl: 'https://www.youtube.com/embed/hZd9fDOKYoM',
-    zoomUrl: 'https://www.google.com',
     webUrl: 'http://www.over.com.ar',
     photo: OverFoto,
     logo: Over
@@ -58,13 +55,13 @@ const sponsorsData = {
     zoomUrl: 'https://us04web.zoom.us/j/9150652935?pwd=c09ydmt0YS9uM0tlQ0M5QnQ5TnVtZz09',
     webUrl: 'http://www.calier.com.ar',
     photo: CalierFoto,
-    logo: Calier
+    logo: Calier,
+    imgLinkUrl: 'https://calierformacion.com/'
   },
   'vetanco': {
     info: 'Vetanco es un laboratorio veterinario internacional que desde hace 30 años desarrolla, elabora y comercializa productos innovadores para la salud y la producción animal.\nPresente en más de 40 países ofrece productos internacionalmente probados, controlados y seguros.\nComo referente internacional en aditivos y especialidades para la agroindustria su portafolio de productos es amplio y diversificado.\nVetanco cuenta con proyectos de investigación de la más avanzada tecnología, tanto en sus laboratorios de I+D como en colaboración con centros de excelencia en todo el mundo. ',
     mail: 'vetanco@vetanco.com',
     videoUrl: 'https://www.youtube.com/embed/rx2Nfr-eA_k',
-    zoomUrl: 'https://www.google.com',
     webUrl: 'https://www.vetanco.com/',
     photo: VetancoFoto,
     logo: Vetanco
@@ -73,7 +70,6 @@ const sponsorsData = {
     info: 'CIALE Alta existe para más que producir y comercializar semen de toros de alto calibre. CIALE Alta trabaja con sus clientes para crear valor para ellos esforzándose por comprender y estar a la altura de sus necesidades y objetivos individuales. La diferencia la marcan los programas innovadores y los servicios reproductivos. Proveer programas personalizados que sean específicos para las necesidades individuales de cada cliente, esa es la promesa detrás de la marca de CIALE Alta, promesa que busca mejorar de manera tangible la rentabilidad individual de cada rodeo.',
     mail: 'info@ciale.com',
     videoUrl: 'https://www.youtube.com/embed/La_NQRlzA-Q',
-    zoomUrl: 'https://www.google.com',
     webUrl: 'https://www.ciale.com',
     photo: CialeFoto,
     logo: Ciale
@@ -82,7 +78,6 @@ const sponsorsData = {
     info: 'Proagro es un laboratorio de medicamentos veterinarios para grandes y pequeños animales avalado por 50 años de trayectoria en el mercado. Con una expansión cada vez mayor a nivel mundial, se asienta como una de las empresas con mayor solidez en la ciudad de Rosario.\nDesde 2008, cuenta con la certificación GMP, asegurando la incorporación de productos confiables, trazables y seguros al mercado nacional e internacional.\nLa empresa tiene un fuerte compromiso social: colabora habitualmente con distintas fundaciones, instituciones, escuelas, hospitales y diversas organizaciones afines.',
     mail: 'info@proagrolab.com.ar',
     videoUrl: 'https://www.youtube.com/embed/JVpscsITY3s',
-    zoomUrl: 'https://www.google.com',
     webUrl: 'https://www.proagrolab.com.ar',
     photo: ProagroFoto,
     logo: Proagro
@@ -101,7 +96,7 @@ const sponsorsData = {
     mail: 'ana.donovan@pahc.com',
     videoUrl: 'https://www.youtube.com/embed/fKRAH2iu81E',
     zoomUrl: 'https://us02web.zoom.us/j/84124551180',
-    webUrl: 'https://phibrosaludanimal.com/consulta-tecnica',
+    webUrl: 'https://www.minitube.com/catalog/es/bovino/',
     photo: PhibroFoto,
     logo: Phibro
   },
@@ -109,7 +104,6 @@ const sponsorsData = {
     info: 'Somos una empresa de familia que crece y se profesionaliza con vocación de acompañar al veterinario en su tarea diaria y comprometidos con la sanidad animal.\nFatro, laboratorio líder en Europa, forma parte de nuestra sociedad.\nDesde hace más de 60 años, iniciamos un camino de crecimiento sostenido tanto en áreas productivas, líneas terapéuticas y en los países donde estamos presentes.\nHoy somos más de 100 personas trabajando juntos, contamos con más de 100 productos y estamos presentes en 16 países, en muchos, con posiciones de liderazgo.\nFuimos de los primeros laboratorios en Argentina en obtener la certificación GMP lo que garantiza la máxima seguridad y confiabilidad de nuestros productos.\nDesde siempre, promovemos los valores de compromiso, respeto y mejora continua, reflejados en la calidad de nuestros productos y en el profesionalismo comercial.',
     mail: 'consultas@fatrovonfranken.com.ar',
     videoUrl: 'https://www.youtube.com/embed/oEPVQy1Tv5I',
-    zoomUrl: 'https://www.google.com',
     webUrl: 'https://www.fatrovonfranken.com/',
     logo: VonFranken
   },
@@ -162,12 +156,13 @@ const useStyles = makeStyles({
     '&:hover': {
       cursor: 'pointer'
     }
+  },
+  imgWithLink: {
+    '&:hover': {
+      cursor: 'pointer'
+    }
   }
 });
-
-const goToHome = () => {
-  window.location.href = './#/';
-}
 
 const Sponsor = () => {
   let { sponsorId } = useParams();
@@ -175,6 +170,16 @@ const Sponsor = () => {
 
   if (!sponsorId || !sponsorsData[sponsorId]) {
     return <Redirect to="/" />
+  }
+
+  const goToImgLink = (url) => {
+    if (url){
+      window.location.href = url;
+    }
+  }
+
+  const goToHome = () => {
+    window.location.href = './#/';
   }
 
   const sponsor = sponsorsData[sponsorId];
@@ -202,25 +207,25 @@ const Sponsor = () => {
 
       <div style={{ display: 'table', margin: '0 auto', paddingBottom: '45px' }}>
         <Button className={classes.sponsorBtn} style={{ position: 'relative', right: '10px' }} target="_blank" href={sponsor.webUrl} size="small" variant="contained" >Web institucional</Button>
-        {sponsor.zoomUrl ? <Button className={classes.sponsorBtn} style={{ position: 'relative', left: '10px' }} target="_blank" href={sponsor.zoomUrl} size="small" >Link al zoom</Button> : null }
+        {sponsor.zoomUrl ? <Button className={classes.sponsorBtn} style={{ position: 'relative', left: '10px' }} target="_blank" href={sponsor.zoomUrl} size="small" >Link al zoom</Button> : null}
       </div>
 
-      <div style={{ textAlign: 'center' , marginBottom: '45px'}}>
-        <img style={{ width: '1080px', display: 'inline-block' }} src={sponsor.photo}></img>
+      <div style={{ textAlign: 'center', marginBottom: '45px' }} className={sponsor.imgLinkUrl ? classes.imgWithLink : ''}>
+        <img style={{ width: '1080px', display: 'inline-block' }} onClick={() => goToImgLink(sponsor.imgLinkUrl)} src={sponsor.photo}></img>
       </div>
 
       <Card className={classes.root} variant="outlined" style={{ paddingLeft: '15px', paddingTop: '0px' }} >
         <CardContent className={classes.content} style={{ color: 'black', }}>
-          <Typography className={classes.title} gutterBottom style={{ fontWeight: 'bold', fontSize: '18px' }}>
+          <Typography className={classes.title} gutterBottom style={{  fontFamily: 'Oswald', fontWeight: 'bold', fontSize: '18px' }}>
             Acerca de
           </Typography>
-          <Typography className={classes.pos} style={{ marginLeft: '15px' }} component="p">
+          <Typography className={classes.pos} style={{ marginLeft: '15px',  fontFamily: 'Oswald', }} component="p">
             {sponsor.info}
           </Typography>
-          <Typography style={{ fontWeight: 'bold', fontSize: '18px' }}>
+          <Typography style={{ fontWeight: 'bold', fontSize: '18px',  fontFamily: 'Oswald', }}>
             Contacto:
           </Typography>
-          <Typography style={{ marginLeft: '5px' }} className={classes.pos} >
+          <Typography style={{ marginLeft: '5px',  fontFamily: 'Oswald', }} className={classes.pos} >
             {sponsor.mail}
           </Typography>
         </CardContent>

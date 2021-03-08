@@ -13,6 +13,7 @@ import Zoovet from "../logos/zoovet.jpg";
 import Phibro from "../logos/phibro.jpg";
 import Allvet from "../logos/allvet.jpg";
 import VonFranken from "../logos/vonfranken.png";
+import Arsa from "../logos/arsa.png";
 
 import OverFoto from "../fotosSponsor/over.jpg";
 import VetancoFoto from "../fotosSponsor/vetanco.jpg";
@@ -22,6 +23,7 @@ import CalierFoto from "../fotosSponsor/calier.jpg";
 import ZoovetFoto from "../fotosSponsor/zoovet.jpg";
 import PhibroFoto from "../fotosSponsor/phibro.png";
 import AllvetFoto from "../fotosSponsor/allvet.jpg";
+import ArsaFoto from "../fotosSponsor/arsa.png";
 
 import Logo from "../logo.png";
 
@@ -115,6 +117,15 @@ const sponsorsData = {
     photo: AllvetFoto,
     logo: Allvet
   },
+  'arsa': {
+    info: 'Arsa S.R.L. es una empresa argentina dedicada a la producción y comercialización de productos veterinarios.\nFundada en 1952, en sus inicios se abocó específicamente a la inseminación artificial.\nA lo largo de los años la empresa ha logrado diversificar sus especialidades aumentando sus prestaciones hacia la sanidad animal tanto sea para animales de producción como así también animales de compañía. Hemos desarrollado una línea de antibióticos para rodeos de carne y de leche y de biológicos tanto para grandes como para pequeños animales y en la actualidad contamos con una prestigiosa línea de hormonales al servicio de la reproducción animal.\nNuestra amplia gama de productos se comercializa en el país y distintos mercados latinoamericanos (Brasil, Uruguay, Bolivia, Paraguay, México y algunos países de Centroamérica) a través de nuestra red de vendedores respondiendo a nuestra política de cercanía con el profesional.',
+    mail: 'Contaduriaarsa@fibertel.com.ar',
+    videoUrl: 'https://www.youtube.com/embed/NG3e7t0u1j4',
+    webUrl: 'http://arsa-srl.com.ar/',
+    zoomUrl: 'https://us05web.zoom.us/j/3615183926?pwd=dXVyRENaYVVwMDJPTVd6WCtPNllwdz09',
+    logo: Arsa,
+    photo: ArsaFoto
+  }
 
 
 }
@@ -174,7 +185,7 @@ const Sponsor = () => {
 
   const goToImgLink = (url) => {
     if (url){
-      window.location.href = url;
+      window.open(url, "_blank");
     }
   }
 

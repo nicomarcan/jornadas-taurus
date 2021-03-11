@@ -157,17 +157,150 @@ const Home = () => {
   const speakers = useRef(null)
   const sponsorsRef = useRef(null)
 
-  return (
+  const resolution = window.innerWidth;
+  const isMobile = resolution >= 320 && resolution <= 480;
+
+  console.log(isMobile);
+
+  let content = (
     <div style={{ flexGrow: 1 }}>
+    <AppBar position="static" style={{ color: 'black', backgroundColor: '#f29175' }}>
+      <Toolbar variant="dense">
+        <Typography variant="h6" color="inherit" style={{ flexGrow: 1 }}>
+          <img style={{ width: '170px', marginTop: '15px' }} src={Logo}></img>
+        </Typography>
+        <Button color="inherit" onClick={() => goToRef(sponsorsRef)}><strong>Patrocinantes</strong></Button>
+        <Button color="inherit" onClick={() => goToRef(schedule)}><strong>Programa</strong></Button>
+        <Button color="inherit" onClick={() => goToRef(speakers)}><strong>Disertantes</strong></Button>
+        <Button color="inherit" onClick={taurusPage}><strong>Web Taurus</strong></Button>
+      </Toolbar>
+    </AppBar>
+    <div >
+      <img style={{ width: '100%' }} src={Banner}></img>
+    </div>
+    <Card className={classes.root} variant="outlined" >
+      <CardContent className={classes.content}>
+        <Typography className={classes.title} color="textSecondary" gutterBottom>
+          Nacieron en 2002 como complemento de la revista. Dirigidas a profesionales que trabajan en reproducción bovina y estudiantes de carreras afines. Participan destacados especialistas del país y del exterior, quienes abordan aquellos temas que son clave para el trabajo diario como asesores, siempre teniendo como eje el rol profesional. Cuentan con el apoyo de las principales empresas del sector.
+        </Typography>
+      </CardContent>
+    </Card>
+
+    <Typography className={classes.inscription} color="textSecondary" gutterBottom>
+      <a href="https://us02web.zoom.us/webinar/register/WN_XrQ33tcCTZCsTNVAXXuJjg"> Inscríbase aquí</a>
+    </Typography>
+
+
+    <div style={{ marginTop: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center' }} ref={sponsorsRef}>
+      <iframe style={{ marginLeft: '35px', marginTop: '40px' }} align="middle" width="800" height="425" src="https://www.youtube.com/embed/WMq9kWEm2qM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+      <Card className={classes.sponsors} style={{ border: 'none', boxShadow: 'none' }} >
+        <CardContent className={classes.content}>
+          <Typography gutterBottom className={classes.sponsorsTitle}>
+            PATROCINANTES PRINCIPALES
+          </Typography>
+          <div className={classes.sponsorsDivPrincipal} onClick={() => goToSponsor('vonfranken')}>
+            <img src={Click} style={{ position: 'relative', top: '-19px' }} width="40" />
+            <img className={classes.sponsor} src={VonFranken}></img>
+          </div>
+          <div className={classes.sponsorsDivPrincipal} onClick={() => goToSponsor('over')}>
+            <img src={Click} style={{ position: 'relative', left: '-21px', top: '-22px' }} width="40" />
+            <img className={classes.sponsor} style={{ position:'relative', left:'-10px',width: '120px', marginTop: '20px', marginBottom: '15px' }} src={Over}></img>
+          </div>
+          <div className={classes.sponsorsDivPrincipal} onClick={() => goToSponsor('zoovet')}>
+            <img src={Click} style={{ position: 'relative', left: '6px', top: '-13px' }} width="40" />
+            <img className={classes.sponsor} src={Zoovet} style={{ marginTop: '0px' }}></img>
+          </div>
+          <div className={classes.sponsorsDivPrincipal} onClick={() => goToSponsor('proagro')}>
+            <img src={Click} style={{ position: 'relative', left: '-12px', top: '-34px' }} width="40" />
+            <img style={{ width: '120px', marginTop: '5px', position:'relative', left:'-16px' }} className={classes.sponsor} src={ProAgro}></img>
+          </div>
+
+        </CardContent>
+      </Card>
+    </div>
+
+
+    <Card className={classes.sponsorsSec} variant="outlined" >
+      <CardContent className={classes.content} style={{ textAlign: 'center' }}>
+        <Typography gutterBottom className={classes.sponsorsSecTitle}>
+          PATROCINANTES
+        </Typography>
+        <div style={{ display: 'inline-flex' }}>
+          <div className={classes.sponsorSec} onClick={() => goToSponsor('calier')}>
+            <img className={classes.sponsorSecImg} style={{ position: 'relative', left: '3px', top: '28px', width: '90px' }} src={Calier}></img>
+            <div style={{ position: 'relative', top: '21px' }}>
+              <img src={Click} style={{ position: 'relative', top: '3px', left: '3px' }} width="30" />
+            </div>
+          </div>
+          <div className={classes.sponsorSec} onClick={() => goToSponsor('vetanco')}>
+            <img className={classes.sponsorSecImg} style={{ position: 'relative', width: '140px', right: '4px', top: '22px', paddingTop: '10px', paddingBottom: '3px' }} src={Vetanco}></img>
+            <div style={{ position: 'relative', top: '11px' }}>
+              <img src={Click} style={{ position: 'relative', top: '3px', left: '3px' }} width="30" />
+            </div>
+          </div>
+          <div className={classes.sponsorSec} onClick={() => goToSponsor('allvet')}>
+            <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '41px', left: '4px', width: '115px' }} src={AllVet}></img>
+            <div style={{ position: 'relative', top: '45px' }}>
+              <img src={Click} style={{ position: 'relative', top: '3px', left: '3px' }} width="30" />
+            </div>
+          </div>
+          <div className={classes.sponsorSec} onClick={() => goToSponsor('ciale')}>
+            <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '39px' }} src={Ciale}></img>
+            <div style={{ position: 'relative', top: '40px' }}>
+              <img src={Click} style={{ position: 'relative', top: '3px', left: '3px' }} width="30" />
+            </div>
+          </div>
+          <div className={classes.sponsorSec} onClick={() => goToSponsor('cdv')}>
+            <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '39px' }} src={CDV}></img>
+            <div style={{ position: 'relative', top: '32px' }}>
+              <img src={Click} style={{ position: 'relative', top: '3px', left: '3px' }} width="30" />
+            </div>
+          </div>
+          <div className={classes.sponsorSec} onClick={() => goToSponsor('phibro')}>
+            <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '30px', width: '105px', left:'4px' }} src={Phibro}></img>
+            <div style={{ position: 'relative', top: '20px' }}>
+              <img src={Click} style={{ position: 'relative', top: '3px', left: '3px' }} width="30" />
+            </div>
+          </div>
+          <div className={classes.sponsorSec} onClick={() => goToSponsor('arsa')}>
+            <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '35px', width: '150px' }} src={Arsa}></img>
+            <div style={{ position: 'relative', top: '31px' }}>
+              <img src={Click} style={{ position: 'relative', top: '3px', left: '3px' }} width="30" />
+            </div>
+          </div>
+          <div className={classes.sponsorSec} onClick={() => goToSponsor('zoetis')}>
+            <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '2px', left: '3px' }} src={Zoetis}></img>
+            <div style={{ position: 'relative', top: '-37px' }}>
+              <img src={Click} style={{ position: 'relative', top: '3px', left: '3px' }} width="30" />
+            </div>
+          </div>
+        </div>
+      </CardContent>
+    </Card>
+
+    <img className={classes.schedule} ref={schedule} src={Programa}></img>
+    <img className={classes.speakers} ref={speakers} src={Disertantes}></img>
+
+
+    <Typography className={classes.footer} color="textSecondary" gutterBottom>
+      <a target="_blank" style={{ textDecoration: 'none', color: 'black', fontSize: 18, display: 'block' }} href="mailto:edicionestaurus@gmail.com"> edicionestaurus@gmail.com</a>
+      <a target="_blank" style={{ textDecoration: 'none', color: 'black', fontSize: 18, display: 'block' }} href="https://www.revistataurus.com.ar/"> www.revistataurus.com.ar</a>
+    </Typography>
+
+
+  </div>
+  );
+
+
+
+  if (isMobile){
+    return (
+       <div style={{ flexGrow: 1 }}>
       <AppBar position="static" style={{ color: 'black', backgroundColor: '#f29175' }}>
         <Toolbar variant="dense">
           <Typography variant="h6" color="inherit" style={{ flexGrow: 1 }}>
             <img style={{ width: '170px', marginTop: '15px' }} src={Logo}></img>
           </Typography>
-          <Button color="inherit" onClick={() => goToRef(sponsorsRef)}><strong>Patrocinantes</strong></Button>
-          <Button color="inherit" onClick={() => goToRef(schedule)}><strong>Programa</strong></Button>
-          <Button color="inherit" onClick={() => goToRef(speakers)}><strong>Disertantes</strong></Button>
-          <Button color="inherit" onClick={taurusPage}><strong>Web Taurus</strong></Button>
         </Toolbar>
       </AppBar>
       <div >
@@ -186,90 +319,9 @@ const Home = () => {
       </Typography>
 
 
-      <div style={{ marginTop: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center' }} ref={sponsorsRef}>
-        <iframe style={{ marginLeft: '35px', marginTop: '40px' }} align="middle" width="800" height="425" src="https://www.youtube.com/embed/WMq9kWEm2qM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-        <Card className={classes.sponsors} style={{ border: 'none', boxShadow: 'none' }} >
-          <CardContent className={classes.content}>
-            <Typography gutterBottom className={classes.sponsorsTitle}>
-              PATROCINANTES PRINCIPALES
-              <img src={Click} style={{ position: 'relative', left: '7px', top: '2px' }} width="40" />
-            </Typography>
-            <div className={classes.sponsorsDivPrincipal} onClick={() => goToSponsor('vonfranken')}>
-              <img className={classes.sponsor} src={VonFranken}></img>
-            </div>
-            <div className={classes.sponsorsDivPrincipal} onClick={() => goToSponsor('over')}>
-              <img className={classes.sponsor} style={{ width: '120px', marginTop: '20px', marginBottom: '15px' }} src={Over}></img>
-            </div>
-            <div className={classes.sponsorsDivPrincipal} onClick={() => goToSponsor('zoovet')}>
-              <img className={classes.sponsor} src={Zoovet} style={{ marginTop: '0px' }}></img>
-            </div>
-            <div className={classes.sponsorsDivPrincipal} onClick={() => goToSponsor('proagro')}>
-              <img style={{ width: '120px', marginTop: '5px' }} className={classes.sponsor} src={ProAgro}></img>
-            </div>
-
-          </CardContent>
-        </Card>
+      <div style={{ marginTop: '20px',  alignItems: 'center', justifyContent: 'center', textAlign:'center' }} ref={sponsorsRef}>
+        <iframe style={{ margin: '40px', maxWidth: '100%', height: 'auto' }} align="middle"  src="https://www.youtube.com/embed/WMq9kWEm2qM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </div>
-
-
-      <Card className={classes.sponsorsSec} variant="outlined" >
-        <CardContent className={classes.content} style={{ textAlign: 'center' }}>
-          <Typography gutterBottom className={classes.sponsorsSecTitle}>
-            PATROCINANTES
-            <img src={Click} style={{ position: 'relative', top: '3px', left: '3px' }} width="30" />
-          </Typography>
-          <div style={{ display: 'inline-flex' }}>
-            <div className={classes.sponsorSec} onClick={() => goToSponsor('calier')}>
-              <img className={classes.sponsorSecImg} style={{ position: 'relative', left: '3px', top: '28px', width: '90px' }} src={Calier}></img>
-              <div style={{ position: 'relative', top: '19px' }}>
-                <img src={Click} style={{ position: 'relative', top: '3px', left: '3px' }} width="30" />
-              </div>
-            </div>
-            <div className={classes.sponsorSec} onClick={() => goToSponsor('vetanco')}>
-              <img className={classes.sponsorSecImg} style={{ position: 'relative', width: '140px', right: '4px', top: '22px', paddingTop: '10px', paddingBottom: '3px' }} src={Vetanco}></img>
-              <div style={{ position: 'relative', top: '9px' }}>
-                <img src={Click} style={{ position: 'relative', top: '3px', left: '3px' }} width="30" />
-              </div>
-            </div>
-            <div className={classes.sponsorSec} onClick={() => goToSponsor('allvet')}>
-              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '41px', left: '4px', width: '115px' }} src={AllVet}></img>
-              <div style={{ position: 'relative', top: '15px' }}>
-                <img src={Click} style={{ position: 'relative', top: '3px', left: '3px' }} width="30" />
-              </div>
-            </div>
-            <div className={classes.sponsorSec} onClick={() => goToSponsor('ciale')}>
-              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '39px' }} src={Ciale}></img>
-              <div style={{ position: 'relative', top: '15px' }}>
-                <img src={Click} style={{ position: 'relative', top: '3px', left: '3px' }} width="30" />
-              </div>
-            </div>
-            <div className={classes.sponsorSec} onClick={() => goToSponsor('cdv')}>
-              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '39px' }} src={CDV}></img>
-              <div style={{ position: 'relative', top: '15px' }}>
-                <img src={Click} style={{ position: 'relative', top: '3px', left: '3px' }} width="30" />
-              </div>
-            </div>
-            <div className={classes.sponsorSec} onClick={() => goToSponsor('phibro')}>
-              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '41px' }} src={Phibro}></img>
-              <div style={{ position: 'relative', top: '15px' }}>
-                <img src={Click} style={{ position: 'relative', top: '3px', left: '3px' }} width="30" />
-              </div>
-            </div>
-            <div className={classes.sponsorSec} onClick={() => goToSponsor('arsa')}>
-              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '35px', width: '150px' }} src={Arsa}></img>
-              <div style={{ position: 'relative', top: '15px' }}>
-                <img src={Click} style={{ position: 'relative', top: '3px', left: '3px' }} width="30" />
-              </div>
-            </div>
-            <div className={classes.sponsorSec} onClick={() => goToSponsor('zoetis')}>
-              <img className={classes.sponsorSecImg} style={{ position: 'relative', top: '2px', left: '3px' }} src={Zoetis}></img>
-              <div style={{ position: 'relative', top: '15px' }}>
-                <img src={Click} style={{ position: 'relative', top: '3px', left: '3px' }} width="30" />
-              </div>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
 
       <img className={classes.schedule} ref={schedule} src={Programa}></img>
       <img className={classes.speakers} ref={speakers} src={Disertantes}></img>
@@ -282,7 +334,9 @@ const Home = () => {
 
 
     </div>
-  )
+    )
+  }
+  return content;
 }
 
 export default Home;

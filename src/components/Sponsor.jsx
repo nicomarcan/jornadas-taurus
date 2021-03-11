@@ -14,16 +14,20 @@ import Phibro from "../logos/phibro.jpg";
 import Allvet from "../logos/allvet.jpg";
 import VonFranken from "../logos/vonfranken.png";
 import Arsa from "../logos/arsa.png";
+import CDV from "../logos/cdv.png";
 
 import OverFoto from "../fotosSponsor/over.jpg";
 import VetancoFoto from "../fotosSponsor/vetanco.jpg";
-import CialeFoto from "../fotosSponsor/ciale.jpeg";
+import CialeFoto from "../fotosSponsor/ciale.jpg";
 import ProagroFoto from "../fotosSponsor/proagro.jpg";
 import CalierFoto from "../fotosSponsor/calier.jpg";
 import ZoovetFoto from "../fotosSponsor/zoovet.jpg";
 import PhibroFoto from "../fotosSponsor/phibro.png";
 import AllvetFoto from "../fotosSponsor/allvet.jpg";
 import ArsaFoto from "../fotosSponsor/arsa.png";
+import VonFrankenFoto from "../fotosSponsor/vonfranken.png";
+import ZoetisFoto from '../fotosSponsor/zoetis.jpg';
+import CDVFoto from '../fotosSponsor/cdv.jpg';
 
 import Logo from "../logo.png";
 
@@ -35,6 +39,8 @@ const sponsorsData = {
     videoUrl: 'https://www.youtube.com/embed/8OF0xpjK7no',
     webUrl: 'https://ar.zoetis.com/species/bovino.aspx',
     logo: Zoetis,
+    photo: ZoetisFoto,
+    zoomUrl: 'https://zoom.us/j/94895419517?pwd=WUp6RHBBdzZjbXR4dUh0TGhHZkV6UT09',
   },
   'pfizer': {
     info: 'En Pfizer Trabajamos para desarrollar innovaciones que cambien la vida de los pacientes. La salud es un valor esencial para todos nosotros, por eso aplicamos la ciencia y nuestros recursos globales para brindar terapias que ayudan a extender y mejorar sustancialmente la vida de las personas en todas las etapas de la vida. Contamos con opciones terapéuticas de vanguardia para la prevención y el tratamiento de enfermedades a través de una amplia gama de áreas terapéuticas. Además, contamos con una línea de investigación líder en la industria para el desarrollo de nuevos productos con un potencial prometedor para desafiar algunas de las enfermedades más temidas de nuestro tiempo.',
@@ -48,13 +54,14 @@ const sponsorsData = {
     videoUrl: 'https://www.youtube.com/embed/hZd9fDOKYoM',
     webUrl: 'http://www.over.com.ar',
     photo: OverFoto,
-    logo: Over
+    logo: Over,
+    zoomUrl: 'https://zoom.us/j/5880697656?pwd=YkFCcWZSanRRUmptTnhDQVRoa1ZVQT09'
   },
   'calier': {
     info: 'Calier es la compañía del Grupo Indukern dedicada a la investigación, desarrollo, fabricación y comercialización de productos farmacológicos y biológicos para uso veterinario en animales de producción.\nPonemos a disposición de veterinarios y distribuidores de todo el mundo una amplia oferta terapéutica que incluye acidificantes, antibióticos, antiinflamatorios, antimamíticos, antiparasitarios, biológicos, cardíacos, dermatológicos, desinfectantes, hormonales, premezclas medicamentosas, sedantes y analgésicos, complementos nutricionales y reguladores del sistema digestivo y respiratorio.',
     mail: 'plopez@calier.com.ar',
     videoUrl: 'https://www.youtube.com/embed/68NfFFnzmv8',
-    zoomUrl: 'https://us04web.zoom.us/j/9150652935?pwd=c09ydmt0YS9uM0tlQ0M5QnQ5TnVtZz09',
+    zoomUrl: 'https://us02web.zoom.us/j/86428351052?pwd=T1QwdHduUUE2eG5JSzV6YlcyVmhOQT09',
     webUrl: 'http://www.calier.com.ar',
     photo: CalierFoto,
     logo: Calier,
@@ -66,7 +73,8 @@ const sponsorsData = {
     videoUrl: 'https://www.youtube.com/embed/rx2Nfr-eA_k',
     webUrl: 'https://www.vetanco.com/',
     photo: VetancoFoto,
-    logo: Vetanco
+    logo: Vetanco,
+    zoomUrl: 'https://us02web.zoom.us/j/81102116544?pwd=TnROQVdPb0hyOXBpVjdYNnBlWEtNUT09'
   },
   'ciale': {
     info: 'CIALE Alta existe para más que producir y comercializar semen de toros de alto calibre. CIALE Alta trabaja con sus clientes para crear valor para ellos esforzándose por comprender y estar a la altura de sus necesidades y objetivos individuales. La diferencia la marcan los programas innovadores y los servicios reproductivos. Proveer programas personalizados que sean específicos para las necesidades individuales de cada cliente, esa es la promesa detrás de la marca de CIALE Alta, promesa que busca mejorar de manera tangible la rentabilidad individual de cada rodeo.',
@@ -74,7 +82,8 @@ const sponsorsData = {
     videoUrl: 'https://www.youtube.com/embed/La_NQRlzA-Q',
     webUrl: 'https://www.ciale.com',
     photo: CialeFoto,
-    logo: Ciale
+    logo: Ciale,
+    zoomUrl: 'https://us02web.zoom.us/j/81628346350?pwd=cHZlMHN2bHNTdmM3RHZlRENEaGdyQT09',
   },
   'proagro': {
     info: 'Proagro es un laboratorio de medicamentos veterinarios para grandes y pequeños animales avalado por 50 años de trayectoria en el mercado. Con una expansión cada vez mayor a nivel mundial, se asienta como una de las empresas con mayor solidez en la ciudad de Rosario.\nDesde 2008, cuenta con la certificación GMP, asegurando la incorporación de productos confiables, trazables y seguros al mercado nacional e internacional.\nLa empresa tiene un fuerte compromiso social: colabora habitualmente con distintas fundaciones, instituciones, escuelas, hospitales y diversas organizaciones afines.',
@@ -82,7 +91,8 @@ const sponsorsData = {
     videoUrl: 'https://www.youtube.com/embed/JVpscsITY3s',
     webUrl: 'https://www.proagrolab.com.ar',
     photo: ProagroFoto,
-    logo: Proagro
+    logo: Proagro,
+    zoomUrl: 'https://zoom.us/j/92429519918?pwd=TjE5ZXRTVHNhVkVMeGlVamxybnNhUT09'
   },
   'zoovet': {
     info: 'En Zoovet tenemos como misión, brindar el mejor servicio y ofrecer productos de calidad, agregando valor a través del asesoramiento comercial de nuestros representantes, asumiendo el compromiso de jerarquizar la labor del Médico Veterinario como profesional de la sanidad. Creamos productos mejoradores de la producción y bienestar animal. NUESTRA RECETA, LA MEJOR RECETA.',
@@ -105,9 +115,12 @@ const sponsorsData = {
   'vonfranken': {
     info: 'Somos una empresa de familia que crece y se profesionaliza con vocación de acompañar al veterinario en su tarea diaria y comprometidos con la sanidad animal.\nFatro, laboratorio líder en Europa, forma parte de nuestra sociedad.\nDesde hace más de 60 años, iniciamos un camino de crecimiento sostenido tanto en áreas productivas, líneas terapéuticas y en los países donde estamos presentes.\nHoy somos más de 100 personas trabajando juntos, contamos con más de 100 productos y estamos presentes en 16 países, en muchos, con posiciones de liderazgo.\nFuimos de los primeros laboratorios en Argentina en obtener la certificación GMP lo que garantiza la máxima seguridad y confiabilidad de nuestros productos.\nDesde siempre, promovemos los valores de compromiso, respeto y mejora continua, reflejados en la calidad de nuestros productos y en el profesionalismo comercial.',
     mail: 'consultas@fatrovonfranken.com.ar',
-    videoUrl: 'https://www.youtube.com/embed/oEPVQy1Tv5I',
+    videoUrl: 'https://www.youtube.com/embed/YRknltjwmRQ',
     webUrl: 'https://www.fatrovonfranken.com/',
-    logo: VonFranken
+    logo: VonFranken,
+    zoomUrl: 'https://us02web.zoom.us/j/81031659261',
+    photo: VonFrankenFoto,
+    surveyUrl: 'https://forms.gle/4azgDkfTRywSD3j67'
   },
   'allvet': {
     info: 'Allvet Tecnología Veterinaria, fundada en 2007, es uno de los principales referentes en el mercado argentino de equipos de ultrasonido en veterinaria. Tiene como objetivo seleccionar y adquirir productos por su tecnología y prestación aplicada en grandes animales, tanto en el área reproductiva como en producción animal. Distribuidor exclusivo en Argentina de BCF Technology, introduciendo la tecnología de Easi-scan en Argentina. Nuestra posición en el mercado se basa en un alto nivel de conocimiento técnico focalizando en las áreas de: Asesoramiento Técnico, Servicio de ventas, Servicio de Post Venta, Aplicación de productos y Servicio Técnico.',
@@ -125,9 +138,18 @@ const sponsorsData = {
     zoomUrl: 'https://us05web.zoom.us/j/3615183926?pwd=dXVyRENaYVVwMDJPTVd6WCtPNllwdz09',
     logo: Arsa,
     photo: ArsaFoto
+  },
+  'cdv': {
+    info : 'CDV es un laboratorio argentino, con más de 35 años de historia, especializado en el desarrollo, elaboración y comercialización de productos y servicios para la prevención y diagnóstico de las principales enfermedades que afectan a los rodeos bovinos y ovinos. Sus Plantas de Producción de biológicos cuentan con certiﬁcación GMP otorgada por SENASA, con una capacidad de producción de 72 millones de dosis de vacunas para rumiantes. La Planta de Vacuna Antiaftosa tiene una capacidad de producción de 40 millones de dosis de vacunas, destinadas al mercado nacional y la región. A través de su Servicio de Diagnóstico, su completa línea de productos orientada a la prevención y trabajando al lado del profesional veterinario y entidades sanitarias, logra una sinergia única para contribuir al aumento de la productividad ganadera. ',
+    mail: 'cdv@cdv.com.ar',
+    videoUrl: 'https://www.youtube.com/embed/OmFrBomxXVA',
+    webUrl: 'http://www.cdv.com.ar/',
+    wppUrl: 'https://api.whatsapp.com/send?phone=5491133122238&text=Visit%C3%A9%20la%20p%C3%A1gina%20web%20de%20CDV,%20me%20interesa%20m%C3%A1s%20informaci%C3%B3n%20sobre',
+    logo: CDV,
+    photo: CDVFoto,
+    imgLinkUrl: 'https://play.coffeebreakgame.com/cdv',
+    gameUrl: 'https://play.coffeebreakgame.com/cdv'
   }
-
-
 }
 
 const useStyles = makeStyles({
@@ -157,7 +179,8 @@ const useStyles = makeStyles({
     padding: '3px 25px',
     fontWeight: 'bold',
     fontSize: '18px',
-    textTransform: 'none'
+    textTransform: 'none',
+    margin: '0px 10px'
   },
   logoImg: {
     width: '150px',
@@ -217,13 +240,18 @@ const Sponsor = () => {
       </div>
 
       <div style={{ display: 'table', margin: '0 auto', paddingBottom: '45px' }}>
-        <Button className={classes.sponsorBtn} style={{ position: 'relative', right: '10px' }} target="_blank" href={sponsor.webUrl} size="small" variant="contained" >Web institucional</Button>
-        {sponsor.zoomUrl ? <Button className={classes.sponsorBtn} style={{ position: 'relative', left: '10px' }} target="_blank" href={sponsor.zoomUrl} size="small" >Link al zoom</Button> : null}
+        <Button className={classes.sponsorBtn}  target="_blank" href={sponsor.webUrl} size="small" variant="contained" >Web institucional</Button>
+        {sponsor.zoomUrl ? <Button className={classes.sponsorBtn} target="_blank" href={sponsor.zoomUrl} size="small" >Link al zoom</Button> : null}
+        {sponsor.wppUrl ? <Button className={classes.sponsorBtn} target="_blank" href={sponsor.wppUrl} size="small" >Link al whatsapp</Button> : null}
+        {sponsor.surveyUrl ? <Button className={classes.sponsorBtn} target="_blank" href={sponsor.surveyUrl} size="small" >Encuesta</Button> : null}
+        {sponsor.gameUrl ? <Button className={classes.sponsorBtn} target="_blank" href={sponsor.gameUrl} size="small" >Trivia</Button> : null}
       </div>
 
-      <div style={{ textAlign: 'center', marginBottom: '45px' }} className={sponsor.imgLinkUrl ? classes.imgWithLink : ''}>
+      {sponsor.photo ? (
+        <div style={{ textAlign: 'center', marginBottom: '45px' }} className={sponsor.imgLinkUrl ? classes.imgWithLink : ''}>
         <img style={{ width: '1080px', display: 'inline-block' }} onClick={() => goToImgLink(sponsor.imgLinkUrl)} src={sponsor.photo}></img>
-      </div>
+      </div>) : null}
+      
 
       <Card className={classes.root} variant="outlined" style={{ paddingLeft: '15px', paddingTop: '0px' }} >
         <CardContent className={classes.content} style={{ color: 'black', }}>

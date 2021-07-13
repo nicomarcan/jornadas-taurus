@@ -182,6 +182,15 @@ const useStyles = makeStyles({
     textTransform: 'none',
     margin: '0px 10px'
   },
+  sponsorBtnMob: {
+    width: '220px',
+    background: 'rgb(242, 145, 117)',
+    padding: '3px 25px',
+    fontWeight: 'bold',
+    fontSize: '18px',
+    textTransform: 'none',
+    margin: '15px'
+  },
   logoImg: {
     width: '150px',
     float: 'right',
@@ -216,8 +225,12 @@ const Sponsor = () => {
     window.location.href = './#/';
   }
 
+  const resolution = window.innerWidth;
+  const isMobile = resolution >= 320 && resolution <= 480;
+
   const sponsor = sponsorsData[sponsorId];
-  return (
+
+  let content = (
     <React.Fragment >
       <AppBar position="static" style={{ gridAutoFlow: 'column', display: 'inline-grid', color: '#7d7d7d', backgroundColor: '#f9f9f9', padding: '10px' }}>
         <Toolbar variant="dense" style={{ width: '240px', color: 'black', }}>
@@ -271,6 +284,54 @@ const Sponsor = () => {
       </Card>
     </React.Fragment>
   )
+
+  if (isMobile){
+    content = (
+      <React.Fragment >
+        <AppBar position="static" style={{ gridAutoFlow: 'column', display: 'inline-grid', color: '#7d7d7d', backgroundColor: '#f9f9f9', padding: '10px' }}>
+          <div style={{ textAlign: 'center' }}>
+            <img style={{ height: '50px', display: 'inline-block' }} src={sponsor.logo}></img>
+          </div>
+
+        </AppBar>
+        <div style={{ textAlign: 'center', paddingTop: '25px', paddingBottom: '25px' }}>
+          <iframe style={{ margin: '40px', maxWidth: '100%', height: 'auto' }} align="middle" src={sponsor.videoUrl} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        </div>
+  
+        <div style={{ paddingBottom: '45px', textAlign:'center' }}>
+          <Button className={classes.sponsorBtnMob}  target="_blank" href={sponsor.webUrl} size="small" variant="contained" >Web institucional</Button>
+          {sponsor.zoomUrl ? <Button className={classes.sponsorBtnMob} target="_blank" href={sponsor.zoomUrl} size="small" >Link al zoom</Button> : null}
+          {sponsor.wppUrl ? <Button className={classes.sponsorBtnMob} target="_blank" href={sponsor.wppUrl} size="small" >Link al whatsapp</Button> : null}
+          {sponsor.surveyUrl ? <Button className={classes.sponsorBtnMob} target="_blank" href={sponsor.surveyUrl} size="small" >Encuesta</Button> : null}
+          {sponsor.gameUrl ? <Button className={classes.sponsorBtnMob} target="_blank" href={sponsor.gameUrl} size="small" >Trivia</Button> : null}
+        </div>
+  
+        {sponsor.photo ? (
+          <div style={{ textAlign: 'center', marginBottom: '45px' }} className={sponsor.imgLinkUrl ? classes.imgWithLink : ''}>
+          <img style={{  maxWidth: '100%', height: 'auto' }} onClick={() => goToImgLink(sponsor.imgLinkUrl)} src={sponsor.photo}></img>
+        </div>) : null}
+        
+  
+        <Card className={classes.root} variant="outlined" style={{ paddingLeft: '15px', paddingTop: '0px' }} >
+          <CardContent className={classes.content} style={{ color: 'black', }}>
+            <Typography className={classes.title} gutterBottom style={{  fontFamily: 'Oswald', fontWeight: 'bold', fontSize: '18px' }}>
+              Acerca de
+            </Typography>
+            <Typography className={classes.pos} style={{ marginLeft: '15px',  fontFamily: 'Oswald', }} component="p">
+              {sponsor.info}
+            </Typography>
+            <Typography style={{ fontWeight: 'bold', fontSize: '18px',  fontFamily: 'Oswald', }}>
+              Contacto:
+            </Typography>
+            <Typography style={{ marginLeft: '5px',  fontFamily: 'Oswald', }} className={classes.pos} >
+              {sponsor.mail}
+            </Typography>
+          </CardContent>
+        </Card>
+      </React.Fragment>
+    );
+  }
+  return content;
 }
 
 export default Sponsor;
